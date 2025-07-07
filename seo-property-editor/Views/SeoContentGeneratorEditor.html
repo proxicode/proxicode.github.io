@@ -1,0 +1,13 @@
+<div ng-controller="seoEditorController as vm">
+    <umb-box>
+        <umb-box-content>
+            <umb-property label="Fields" description="Comma separated list of field aliases">
+                <input type="text" ng-model="vm.fieldNames" placeholder="name,title,body" />
+            </umb-property>
+            <umb-property label="Generated SEO Text">
+                <textarea ng-model="model.value" rows="10"></textarea>
+            </umb-property>
+            <umb-button label="Generate" action="vm.generate()" type="button" button-style="action"></umb-button>
+        </umb-box-content>
+    </umb-box>
+</div>
